@@ -6,7 +6,7 @@ hello-storm
 
 ## Prerequests (choice one of them)
 1. Run it on the [box] (*recomended*)
-2. Install: **[java]**, **[mvn]** *(and **[storm]** if you want test it more real life)*
+2. Install: **[java]**, **[mvn]** (and **[storm]** if you want test it more real life)
 
 ## Get project
 ```sh
