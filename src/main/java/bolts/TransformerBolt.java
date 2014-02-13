@@ -9,10 +9,16 @@ public class TransformerBolt extends BaseBasicBolt {
 
   @Override
   public void execute(Tuple input, BasicOutputCollector collector) {
+    String message = input.getString(0);
+    System.out.println("message: " + message);
   }
-
 
   @Override
   public void declareOutputFields(OutputFieldsDeclarer declarer) {
+  }
+
+  @Override
+  public void cleanup() {
+    System.out.println("=== TransformerBolt -> cleanup() ===");
   }
 }

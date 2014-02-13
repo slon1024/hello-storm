@@ -24,7 +24,7 @@ public class HelloStormTopology {
 
   private static Config getConfig() {
     Config conf = new Config();
-
+    conf.setDebug(false);
     return conf;
   }
 
