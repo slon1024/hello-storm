@@ -11,6 +11,7 @@ import backtype.storm.tuple.Fields;
 
 public class ItemGenerator extends BaseRichSpout {
   private SpoutOutputCollector _collector;
+  private boolean completed = false;
 
   @Override
   public void open(Map conf, TopologyContext context, SpoutOutputCollector collector) {
@@ -19,7 +20,9 @@ public class ItemGenerator extends BaseRichSpout {
 
   @Override
   public void nextTuple() {
-    _collector.emit(new Values("Hello storm"));
+    if(false == completed)
+      _collector.emit(new Values("Hello storm"));
+    completed = true;
   }
 
   @Override
