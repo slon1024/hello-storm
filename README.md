@@ -5,8 +5,8 @@ hello-storm
 > To prepare a minimal project [storm]
 
 ## Prerequests (choice one of them)
-1. Run it on the **[box]** (*recomended*)
-2. Install: **[java]**, **[mvn]** (and **[storm]** if you want test it more real life)
+1. run it on the **[box]**
+2. **or** install: **[java]**, **[mvn]** (and **[storm]** if you want test it more real life)
 
 ## Get it
 ```sh
