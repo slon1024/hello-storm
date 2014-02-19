@@ -8,6 +8,7 @@ import bolts.TransformerBolt;
 
 public class HelloStormTopology {
   public static void main(String[] args) throws InterruptedException {
+    org.apache.log4j.Logger.getRootLogger().removeAllAppenders();
 
     TopologyBuilder builder = getBuilder();
     runCluster("storm-hello-topology", getConfig(), builder.createTopology());
